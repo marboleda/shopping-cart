@@ -1,0 +1,15 @@
+.header {
+    background-color: #558b2f;
+}
+
+h1 {
+    margin-top: 0px;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
