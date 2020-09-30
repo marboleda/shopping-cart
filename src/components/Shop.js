@@ -6,7 +6,9 @@ import Puree from '../images/eggplant-and-potato-puree.png'
 import Rice from '../images/sweet-chili-salmon-and-brown-rice.png'
 import Spaghetti from '../images/tomato-whole-wheat-spaghetti.png'
 
-const shop = () => {
+const shop = (props) => {
+    const { addItems } = props;
+
     const menuItems = [{
                             id: 'salad',
                             image: Salad,
@@ -36,6 +38,7 @@ const shop = () => {
                                 itemId={item.id}
                                 itemImage={item.image}
                                 itemDesc = {item.description} 
+                                addItems = {addItems}
                             />
                 })}
             </div>

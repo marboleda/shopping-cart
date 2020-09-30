@@ -2,7 +2,7 @@ import React from 'react';
 import './ItemCard.css';
 
 const itemCard = (props) => {
-    const { itemId, itemImage, itemDesc } = props;
+    const { itemId, itemImage, itemDesc, addItems } = props;
 
     return (
         <div className="item">
