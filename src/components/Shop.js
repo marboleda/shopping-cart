@@ -1,10 +1,43 @@
 import React from 'react';
 import ItemCard from './ItemCard'
+import Salad from '../images/chicken-and-ptitim-salad.png'
+import Puree from '../images/eggplant-and-potato-puree.png'
+import Rice from '../images/sweet-chili-salmon-and-brown-rice.png'
+import Spaghetti from '../images/tomato-whole-wheat-spaghetti.png'
 
 const shop = () => {
+    const menuItems = [{
+                            id: 'salad',
+                            image: Salad,
+                            description: 'Chicken and Ptitim Salad'
+                        },
+                       {
+                           id: 'puree',
+                           image: Puree,
+                           description: 'Eggplant and Potato Puree'
+                       },
+                       {
+                           id: 'rice',
+                           image: Rice,
+                           description: 'Sweet Chili Salmon and Brown Rice'
+                       },
+                       {
+                           id: 'spaghetti',
+                           image: Spaghetti,
+                           description: 'Tomato Whole Wheat Spaghetti'
+                       }];
+
     return (
         <div>
-            <h1>Hello from Shop</h1>
+            <div id="items">
+                {menuItems.map((item) => {
+                    return <ItemCard 
+                                itemId={item.id}
+                                itemImage={item.image}
+                                itemDesc = {item.description} 
+                            />
+                })}
+            </div>
         </div>
     );
 };

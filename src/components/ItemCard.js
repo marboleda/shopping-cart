@@ -1,10 +1,12 @@
 import React from 'react';
 
-const itemCard = () => {
+const itemCard = (props) => {
+    const { itemId, itemImage, itemDesc } = props;
+
     return (
         <div className="item">
-            <img src=''></img>
-            <h3></h3>
+            <img src={itemImage}></img>
+            <h3>{itemDesc}</h3>
         </div>
     )
 }
