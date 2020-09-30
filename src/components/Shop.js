@@ -1,5 +1,6 @@
 import React from 'react';
 import ItemCard from './ItemCard'
+import './Shop.css'
 import Salad from '../images/chicken-and-ptitim-salad.png'
 import Puree from '../images/eggplant-and-potato-puree.png'
 import Rice from '../images/sweet-chili-salmon-and-brown-rice.png'

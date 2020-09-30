@@ -1,4 +1,5 @@
 import React from 'react';
+import './ItemCard.css';
 
 const itemCard = (props) => {
     const { itemId, itemImage, itemDesc } = props;
