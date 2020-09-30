@@ -13,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <Routes
-        addItems={addToCart} />
+        addItems={addToCart}
+        numInCart={numOfItemsInCart} />
     </div>
   );
 }

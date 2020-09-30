@@ -5,11 +5,12 @@ import Shop from './Shop';
 import Header from './Header';
 
 const routes = (props) => {
-    const { addItems } = props;
+    const { addItems, numInCart } = props;
 
     return (
         <BrowserRouter>
-            <Header />
+            <Header 
+                numInCart={numInCart}/>
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route 

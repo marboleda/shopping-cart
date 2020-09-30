@@ -1,5 +1,6 @@
 .header {
     background-color: #558b2f;
+    position: relative;
 }
 
 h1 {
@@ -12,4 +13,10 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 15px;
+}
+
+.numOfItems {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
 }
