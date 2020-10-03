@@ -18,7 +18,9 @@ const ItemCard = (props) => {
                 type="number" 
                 className='num-of-items'
                 value={numOfItem}
-                onChange={(e) => updateNumOfItem(Number(e.target.value))}/>
+                onChange={(e) => updateNumOfItem(Number(e.target.value))}
+            />
+            <button onClick={(e) => addItems(numOfItem)}>Add to Cart</button>
         </div>
     )
 }
