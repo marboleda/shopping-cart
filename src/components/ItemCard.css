@@ -1,3 +1,15 @@
 .item {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
+}
+
+.num-of-items {
+    width: 30%;
+    margin: 10px auto;
+}
+
+button {
+    width: 30%;
+    margin: 5px auto;
 }
