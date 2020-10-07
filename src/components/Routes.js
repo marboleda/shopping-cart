@@ -8,7 +8,7 @@ const routes = (props) => {
     const { addItems, numInCart } = props;
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Header 
                 numInCart={numInCart}/>
             <Switch>
